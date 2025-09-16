@@ -34,7 +34,7 @@ include /etc/sway/config-vars.d/*
 # This is commented in Debian, because the Sway wallpaper files are in a separate
 # package `sway-backgrounds`. Installing this package drops a config file to
 # /etc/sway/config.d/
-output * bg ~/wallpaper/sui.jpg fill
+output * bg ~/wallpaper/robin.jpeg fill
 #
 # Example configuration:
 #
