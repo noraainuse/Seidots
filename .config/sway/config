@@ -24,6 +24,10 @@ default_border none
 gaps inner 10
 include /etc/sway/config-vars.d/*
 
+### service-void-linux
+#exec --no-startup-id pipewire
+#exec --no-startup-id wireplumber
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -94,7 +98,7 @@ output * bg ~/wallpaper/sui.jpg fill
     #Screenshot
     bindsym $mod+Shift+s exec --no-startup-id slurp | grim -g - $(xdg-user-dir PICTURES)/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaymsg exit
 #
 # Moving around:
 #
