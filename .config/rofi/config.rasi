@@ -187,4 +187,6 @@ configuration {
 //@theme "/usr/share/rofi/themes/Monokai.rasi"
 //@theme "/usr/share/rofi/themes/Arc.rasi"
 //@theme "/usr/share/rofi/themes/Arc.rasi"
-@theme "/usr/share/rofi/themes/Arc.rasi"
+//@theme "/usr/share/rofi/themes/Arc.rasi"
+
+@theme "/usr/share/rofi/themes/arthur.rasi"
