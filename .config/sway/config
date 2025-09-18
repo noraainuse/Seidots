@@ -18,7 +18,7 @@ set $term alacritty
 #files manager
 set $file nemo
 # Your preferred application launcher
-set $menu rofi -show run
+set $menu rofi -show drun
 default_border none
 #gaps windows
 gaps inner 10
@@ -96,9 +96,10 @@ output * bg ~/wallpaper/robin.jpeg fill
     # Reload the configuration file
     bindsym $mod+Shift+c reload
     #Screenshot
-    bindsym $mod+Shift+s exec --no-startup-id slurp | grim -g - $(xdg-user-dir PICTURES)/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
+    bindsym $mod+Shift+s exec --no-startup-id slurp | grim -g - $(/home/lynn/Pictures/Screenshots)/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaymsg exit
+
 #
 # Moving around:
 #
